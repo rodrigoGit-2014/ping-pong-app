@@ -1,0 +1,14 @@
+databaseChangeLog:
+  - include:
+      file: 20170426_Match/create.yaml
+      relativeToChangelogFile: true
+      context: pre-applied
+  - include:
+      file: 20170426_MatchResult/create.yaml
+      relativeToChangelogFile: true
+  - include:
+      file: 20170426_MatchType/create.yaml
+      relativeToChangelogFile: true
+  - include:
+      file: 20170426_Player/create.yaml
+      relativeToChangelogFile: true

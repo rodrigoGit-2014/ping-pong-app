@@ -1,0 +1,35 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: rodrigo
+      changes:
+        - createTable:
+            tableName: match_result
+            columns:
+              - column:
+                  name: id
+                  type: int
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: idPlayerOne
+                  type: int
+                  constraints:
+                    nullable: false
+              - column:
+                  name: idPlayerTwo
+                  type: int
+                  constraints:
+                    nullable: false
+              - column:
+                  name: idMatchType
+                  type: int
+                  constraints:
+                    nullable: false
+              - column:
+                  name: date
+                  type: TIMESTAMP
+                  constraints:
+                    nullable: false
